@@ -14,10 +14,10 @@ public class Main {
 
         userDao.createUsersTable();
 
-        userDao.saveUser("Name1", "LastName1", (byte) 20);
-        userDao.saveUser("Name2", "LastName2", (byte) 25);
-        userDao.saveUser("Name3", "LastName3", (byte) 31);
-        userDao.saveUser("Name4", "LastName4", (byte) 38);
+        userDao.saveUser("Anton", "Schorin", (byte) 31);
+        userDao.saveUser("Olga", "Schorina", (byte) 30);
+        userDao.saveUser("Kiril", "Schorin", (byte) 1);
+        userDao.saveUser("Polina", "Schorina", (byte) 2);
 
         userDao.removeUserById(1);
         userDao.getAllUsers();
