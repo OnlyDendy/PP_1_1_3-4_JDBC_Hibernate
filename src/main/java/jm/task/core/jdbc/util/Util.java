@@ -1,5 +1,6 @@
 package jm.task.core.jdbc.util;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -19,6 +20,7 @@ public class Util {
             Class.forName(DB_DRIVER);
             connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
             //System.out.println("База приконнектилась");
+            connection.setAutoCommit(false);
         } catch (ClassNotFoundException | SQLException exception) {
             System.out.println("Что то пошло не так, разберёмся после чая...");
         }
