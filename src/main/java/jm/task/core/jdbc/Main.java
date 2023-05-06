@@ -1,5 +1,6 @@
 package jm.task.core.jdbc;
 
+import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
 import jm.task.core.jdbc.util.Util;
 
@@ -9,7 +10,7 @@ public class Main {
 
         // реализуйте алгоритм здесь
         Util.getConnection();
-        UserServiceImpl userDao = new UserServiceImpl();
+        UserService userDao = new UserServiceImpl();
 
         userDao.createUsersTable();
 
